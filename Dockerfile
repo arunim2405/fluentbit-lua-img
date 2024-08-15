@@ -38,4 +38,7 @@ FROM fluent/fluent-bit:3.1.6
 
 COPY --from=luarocks-installer /luarocks /
 
+
+COPY name.lua /source
+
 WORKDIR /source
